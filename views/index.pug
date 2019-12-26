@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Проверьте свой сайт на уязвимости прямо сейчас!
+  br
+  input(
+    type='text'
+    name='site'
+  )
+  input(
+    type='submit'
+    name='Проверить'
+    id='myButton'
+  )
+  br
+  p(
+    height='100px'
+    style='border: black 1px solid;'
+  )= result
